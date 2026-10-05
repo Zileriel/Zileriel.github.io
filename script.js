@@ -387,7 +387,7 @@ document.querySelector("#contact-links").innerHTML = [
     CONFIG.contact.phone,
     `tel:${CONFIG.contact.phone.replace(/\s/g, "")}`,
   ],
-  ["LinkedIn", "LinkedIn profile", CONFIG.contact.linkedin],
+  ["LinkedIn", "Herkus Žilaitis", CONFIG.contact.linkedin],
   ["GitHub", "@Zileriel", CONFIG.contact.github],
   ["Services", "HestiQ — design & development", CONFIG.contact.services],
 ]
