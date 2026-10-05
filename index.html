@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Herkus Žilaitis — Software Developer" />
+    <title>Herkus Žilaitis — Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/dompurify@3.2.6/dist/purify.min.js"></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/styles/github.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page">
+      <header>
+        <nav>
+          <a href="#about">About</a><a href="#projects">Projects</a
+          ><a href="#contact">Contact</a>
+        </nav>
+        <a href="https://github.com/Zileriel" target="_blank">GitHub ↗</a>
+      </header>
+      <main id="top">
+        <section class="hero card">
+          <div class="hero-copy">
+            <p class="eyebrow">SOFTWARE DEVELOPER · KAUNAS, LT</p>
+            <h1>Herkus<br /><span>Žilaitis.</span></h1>
+            <p class="lead">
+              I design and build software with an emphasis on clear interfaces,
+              maintainable systems, and thoughtful engineering.
+            </p>
+            <div class="actions">
+              <a class="button dark" href="#projects">View projects ↓</a
+              ><a class="button" href="#contact">Get in touch ↗</a>
+            </div>
+          </div>
+          <div class="hero-photo">
+            <img src="./assets/profile.png" alt="Herkus Žilaitis" />
+            <div class="hero-photo-meta">
+              <span>SOFTWARE<br />DEVELOPER</span><small>01 / 04</small>
+            </div>
+          </div>
+        </section>
+        <section id="about" class="section">
+          <div class="heading">
+            <p class="eyebrow">01 — ABOUT</p>
+            <h2>Software with<br /><i>purpose.</i></h2>
+          </div>
+          <div class="about-grid">
+            <div class="card about-copy">
+              <p>
+                I'm a software developer focused on turning ideas into
+                practical, polished products. I work across the stack and enjoy
+                the parts of development where engineering, planning, and
+                product thinking meet.
+              </p>
+              <p>
+                Alongside software development, I run
+                <a href="https://hestiq.com" target="_blank">HestiQ</a>, a
+                design and programming studio.
+              </p>
+            </div>
+            <div class="skills">
+              <div>
+                <p class="label">TECHNOLOGIES</p>
+                <div class="tags">
+                  <span>HTML</span><span>CSS</span><span>JavaScript</span
+                  ><span>React</span> <span>React Native</span
+                  ><span>Node.js</span><span>Electron.js</span>
+                  <span>MongoDB</span><span>C#</span><span>Git</span
+                  ><span>GitHub</span>
+                  <span>Figma</span>
+                </div>
+              </div>
+              <div>
+                <p class="label">CAPABILITIES</p>
+                <ul>
+                  <li>Frontend development</li>
+                  <li>Backend development</li>
+                  <li>Project planning</li>
+                  <li>Technical documentation</li>
+                  <li>Testing & quality</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="projects" class="section">
+          <div class="heading project-heading">
+            <div>
+              <p class="eyebrow">02 — SELECTED WORK</p>
+              <h2>Projects.</h2>
+            </div>
+            <a href="https://github.com/Zileriel" target="_blank"
+              >All repositories ↗</a
+            >
+          </div>
+          <div class="filters" id="filters">
+            <button class="active" data-filter="all">All</button
+            ><span id="status">Loading portfolio projects…</span>
+          </div>
+          <div class="project-grid" id="project-grid">
+            <div class="loading card">Fetching projects from GitHub</div>
+          </div>
+          <p class="note">
+            Only repositories tagged with the <code>portfolio</code> GitHub
+            topic are displayed.
+          </p>
+        </section>
+        <section id="contact" class="section contact">
+          <div class="card contact-card">
+            <div>
+              <p class="eyebrow">03 — CONTACT</p>
+              <h2>Let's build<br /><i>something useful.</i></h2>
+            </div>
+            <div id="contact-links"></div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <span>© <span id="year"></span> Herkus Žilaitis</span
+        ><a href="#top">Back to top ↑</a>
+      </footer>
+    </div>
+    <dialog id="dialog">
+      <button id="close" aria-label="Close">×</button>
+      <div id="dialog-content"></div>
+    </dialog>
+
+    <script src="https://cdn.jsdelivr.net/npm/@highlightjs/cdn-assets@11.11.1/highlight.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
