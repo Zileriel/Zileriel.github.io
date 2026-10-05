@@ -219,8 +219,8 @@ function render() {
         `<button class="project" data-id="${x.id}">
   <div class="project-content">
     <span class="num">${String(i + 1).padStart(2, "0")} / ${String(list.length).padStart(2, "0")}</span>
-    <h3>${esc(x.name)}</h3>
-    <p>${esc(x.description)}</p>
+    <h3>${text(x.name)}</h3>
+    <p>${text(x.description)}</p>
   </div>
 
   ${
@@ -233,7 +233,7 @@ function render() {
 
   <div class="bottom">
     <div class="tech">
-      ${x.language ? `<span>${esc(x.language)}</span>` : ""}
+      ${x.language ? `<span>${text(x.language)}</span>` : ""}
     </div>
   </div>
 </button>`,
